@@ -16,4 +16,4 @@ mkdir -p out2 && MAKEFUN_OUTPUT_DIR=out2 node main.ts # run 2
 sha256sum out/entry.png out2/entry.png entry.png      # all three identical
 ```
 
-Run 13 Nov 2026 ~19:40 WIB: both runs byte-identical (sha256 b065d0805a3cade4ad8f6d349088641fbdc67f4259835bec60376d945ef9a42e), 270,497 bytes, 1024x1024 JPEG.
+Run 14 Nov 2026 ~07:25 WIB (re-authored session, post-opening): both runs byte-identical (sha256 b065d0805a3cade4ad8f6d349088641fbdc67f4259835bec60376d945ef9a42e), 270,497 bytes, 1024x1024 JPEG. main.ts now also verifies the output sha256 matches the source before exiting.
